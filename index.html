@@ -18,7 +18,7 @@
       </nav>
       <ul class="user-navigation">
         <li class="user-navigation-item">Поиск</li>
-        <li class="user-navigation-item">Вход</li>
+        <li><a class="login-link" href="login.html">Вход</a></li>
         <li class="user-navigation-item">Корзина</li>
       </ul>
       <div class="main-header-info">
@@ -26,7 +26,50 @@
         <p class="main-header-info-phone">8 812 450-25-25</p>
       </div>
     </header>
-    <main>
+    <body>
+    <main class="container">
+      <section class="modal modal-login">
+        <h2 visually hidden>Личный кабинет</h2>
+        <p visually hidden>Введите свой логин и пароль.</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+          </p>
+          <p>
+            <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <button class="button" type="submit">
+            Войти
+          </button>
+            <a class="restore" href="#">Забыли пароль?</a>
+            <p>
+            <a class="restore" href="#">Новая регистрация</a>
+          </p>
+        </form>
+        <p>
+        <form class="search-button" action="https://echo.htmlacademy.ru" method="post">
+        <input class="search" type="search" name="search" placeholder="Что ищем?">
+        <button class="button" type="submit">
+          Искать
+          </button>
+        </form>
+      </p>
+      <h2>Мы обязательно вам ответим</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <input class="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <input class="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <input class="feedback-msg" type="text" name="msg" placeholder="Напишите что-нибудь...">
+        </p>
+        <button class="button" type="submit">
+          Отправить
+        </button>
+      </form>
+      </section>
       <section class="features">
         <p class="features-title">Магазин Глейси - это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</p>
         <ul class="features-list">
